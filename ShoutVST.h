@@ -1,10 +1,10 @@
 #pragma once
 #include <audioeffectx.h>
 #include "LibShoutWrapper.h"
-#include "ShoutVSTEditor.h"
 #include "ShoutVSTEncoderMP3.h"
 #include "ShoutVSTEncoderOGG.h"
 #include "ShoutVSTEncoderFLAC.h"
+#include "ShoutVSTEditor.h"
 
 #include <atomic>
 #include <memory>

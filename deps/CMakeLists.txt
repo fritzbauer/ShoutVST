@@ -2,6 +2,9 @@ project (deps)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/libmp3lame-CMAKE)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/OGG-Vorbis-CMAKE)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/libshout-CMAKE)
+
+set(WITH_OGG ON)
+set(BUILD_SHARED_LIBS ON)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/flac)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/vst_sdk_2.4)
 

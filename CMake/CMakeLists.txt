@@ -17,4 +17,4 @@ aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/../ SOURCES)
 
 add_library(${PROJECT_NAME}  SHARED ${SOURCES})
 
-TARGET_LINK_LIBRARIES(${PROJECT_NAME} VST_SDK shout ogg vorbis mp3lame fluid-gui)
+TARGET_LINK_LIBRARIES(${PROJECT_NAME} VST_SDK shout ogg vorbis mp3lame fluid-gui FLAC FLAC++)

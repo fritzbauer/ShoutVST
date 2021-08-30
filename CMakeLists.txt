@@ -3,6 +3,8 @@ cmake_minimum_required(VERSION 3.0)
 project (ShoutVST_Solution)
 
 set(CMAKE_BUILD_TYPE Release)
+#set(CMAKE_BUILD_TYPE Debug)
+#set(CMAKE_CXX_FLAGS_DEBUG  "-g")
 
 if((${CMAKE_CXX_COMPILER_ID} STREQUAL MSVC))
   set(MYFLAGS "/O2 /WX- /MT")

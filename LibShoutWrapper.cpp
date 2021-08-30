@@ -102,7 +102,7 @@ bool LibShoutWrapper::InitializeICECasting(
     goto err;
   }
   ret = shout_open(tmp);
-  if (ret != SHOUTERR_SUCCESS && ret != SHOUTERR_BUSY) {
+  if (ret != SHOUTERR_SUCCESS && ret != SHOUTERR_BUSY && ret != SHOUTERR_RETRY) {
     goto err;
   }
 
@@ -131,7 +131,7 @@ bool LibShoutWrapper::waitForConnect() {
   }
   int ret = SHOUTERR_BUSY;
   size_t counter = 0;
-  while (ret == SHOUTERR_BUSY) {
+  while (ret == SHOUTERR_BUSY || ret == SHOUTERR_RETRY) {
     if (counter++ > 50) {
       return false;
     }
