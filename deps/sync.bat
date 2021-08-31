@@ -23,7 +23,7 @@ if not exist libshout-CMAKE (
 
 )
 echo libflac...
-if not exist libflac (
+if not exist flac (
     (git clone https://github.com/xiph/flac.git)
 ) else (
     (cd flac) && (git pull) && (cd ..)
