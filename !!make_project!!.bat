@@ -4,7 +4,7 @@ if not exist deps/vst_sdk_2.4 (
 cd deps
 call sync
 rem patching flac repo 
-Powershell.exe -executionpolicy remotesigned -File patchFlac.ps1
+powershell.exe -ExecutionPolicy RemoteSigned -File patchFlac.ps1
 
 cd ..
 ) 

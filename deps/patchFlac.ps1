@@ -4,5 +4,11 @@
 #>
 $filePath = ".\flac\CMakeLists.txt"
 $flacCmakeFile = Get-Content $filePath
-$flacCmakeFilePatched = $flacCmakeFile.Replace("    find_package(Ogg REQUIRED)", "    #find_package(Ogg REQUIRED)")
-Set-Content -Value $flacCmakeFilePatched -Path $filePath
+if($flacCMakeFile.Contains("    find_package(Ogg REQUIRED)")){
+    $flacCmakeFilePatched = $flacCmakeFile.Replace("    find_package(Ogg REQUIRED)", "    #find_package(Ogg REQUIRED)")
+    Set-Content -Value $flacCmakeFilePatched -Path $filePath
+} elseif ($flacCMakeFile.Contains("    #find_package(Ogg REQUIRED)")) {
+    Write-Host "FLAC Cmake file already patched." -ForegroundColor Green
+} else {
+    Write-Host "Failed to patch FLAC Cmake file." -ForegroundColor Red
+}
