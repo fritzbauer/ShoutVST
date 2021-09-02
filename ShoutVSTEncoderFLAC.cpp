@@ -26,7 +26,9 @@ bool ShoutVSTEncoderFLAC::Initialize(const int bitrate, const int samplerate, co
   pFlacBuffer = new unsigned char[pFlacBufferSize];
   pWAVBuffer = new int[pWAVBufferSize];
 
-  initOggFlacEncoder();
+  if (!initOggFlacEncoder()) {
+      return false;
+  };
 
   bInitialized = true;
   return true;
