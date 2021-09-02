@@ -1,7 +1,8 @@
 /ShoutVST_DLL/
 /build/
-/deps/FLTK/
-/deps/OGG-Vorbis-CMAKE/
+/deps/fltk/
+/deps/vorbis/
+/deps/ogg/
 /deps/libmp3lame-CMAKE/
 /deps/libshout-CMAKE/
 /deps/vst_sdk_2.4/
