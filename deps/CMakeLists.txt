@@ -5,7 +5,7 @@ add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/libmp3lame-CMAKE)
 
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/ogg)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/vorbis)
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/libshout-CMAKE)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Icecast-libshout)
 
 if (WIN32) 
 	set(BUILD_SHARED_LIBS OFF) #Windows builds unusable FLAC.lib files otherwise

@@ -3,8 +3,8 @@
 /deps/fltk/
 /deps/vorbis/
 /deps/ogg/
-/deps/libmp3lame-CMAKE/
-/deps/libshout-CMAKE/
+/deps/lame/
+/deps/Icecast-libshout/
 /deps/vst_sdk_2.4/
 /deps/flac/
 /localHelpers/
