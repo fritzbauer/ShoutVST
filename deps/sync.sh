@@ -2,7 +2,6 @@
 set -e
 echo "Sync started."
 for i in \
-https://github.com/Iunusov/libmp3lame-CMAKE.git \
 https://github.com/xiph/ogg.git \
 https://github.com/xiph/vorbis.git \
 https://gitlab.xiph.org/xiph/icecast-libshout.git \
@@ -31,8 +30,9 @@ tar -xvf download
 mv lame-* lame
 rm download
 
-cp CMakeLists_Icecast-libshout.txt Icecast-libshout/CMakeLists.txt
+cp CMakeLists_Icecast-libshout.txt icecast-libshout/CMakeLists.txt
 cp CMakeLists_lame.txt lame/CMakeLists.txt
+cp CMakeLists_lame_dll.txt lame/Dll/CMakeLists.txt
 
 
 echo "Done."

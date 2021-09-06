@@ -7,8 +7,8 @@ if (WIN32)
 
 	#set(OPTION_BUILD_SHARED_LIBS ON CACHE BOOL " " FORCE) #fltk
 else()
-  #set(BUILD_SHARED_LIBS ON) #Linux fails to link the final libShoutVST.so otherwise
-  	set(OPTION_BUILD_SHARED_LIBS ON CACHE BOOL " " FORCE) #fltk
+  set(BUILD_SHARED_LIBS ON) #Linux fails to link the final libShoutVST.so otherwise
+  set(OPTION_BUILD_SHARED_LIBS ON CACHE BOOL " " FORCE) #fltk
 endif ()
 
 #set(BUILD_SHARED_LIBS ON) 
