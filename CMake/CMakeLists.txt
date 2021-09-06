@@ -19,3 +19,7 @@ add_library(${PROJECT_NAME}  SHARED ${SOURCES})
 #add_library(${PROJECT_NAME} STATIC ${SOURCES})
 
 TARGET_LINK_LIBRARIES(${PROJECT_NAME} VST_SDK shout ogg vorbis vorbisenc mp3lame fluid-gui FLAC FLAC++)
+
+if (WIN32) 
+    TARGET_LINK_LIBRARIES(${PROJECT_NAME} gdiplus)
+ENDIF(WIN32)

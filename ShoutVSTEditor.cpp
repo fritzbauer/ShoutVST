@@ -2,6 +2,7 @@
 #include <shout/shout.h>
 #include <string>
 #include "ShoutVSTEditor.h"
+#include "FL/platform.H"
 
 recursive_mutex ShoutVSTEditor::mtx_;
 typedef std::lock_guard<std::recursive_mutex> guard;
