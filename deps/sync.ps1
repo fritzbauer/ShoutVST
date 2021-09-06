@@ -83,5 +83,6 @@ tar -xzvf $lameArchiveFilename
 mv lame-* lame
 rm $lameArchiveFilename 
 cp CMakeLists_lame.txt lame/CMakeLists.txt
+cp .\CMakeLists_lame_dll.txt lame/dll/CMakeLists.txt
 
 Write-Host("Done.")
